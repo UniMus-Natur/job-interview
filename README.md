@@ -25,8 +25,6 @@ For the full task prompt and issue reference, see **[`TASK_ISSUE_TEMPLATE.md`](.
 │   └── observations.db         # Sample SQLite database containing raw observations
 ├── output/
 │   └── .gitkeep                # Output folder where dwc_occurrences.csv should be saved
-├── scripts/
-│   └── generate_db.py          # Python script used to seed data/observations.db
 ├── docs/
 │   └── INTERVIEWER_GUIDE.md    # Internal guide and evaluation rubric for interviewers
 ├── DWC_MAPPING.md              # Darwin Core transformation mapping specification
