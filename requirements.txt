@@ -1,0 +1,3 @@
+# The core ETL pipeline uses Python standard library only (zero external runtime dependencies).
+# For development and alternative test runners:
+pytest>=7.0.0

@@ -1,0 +1,7 @@
+services:
+  dwc-etl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./output:/app/output
