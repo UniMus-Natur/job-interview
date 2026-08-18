@@ -1,0 +1,6 @@
+services:
+  etl:
+    build: .
+    # The output directory is mounted so the CSV lands on the host.
+    volumes:
+      - ./output:/app/output
