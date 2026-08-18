@@ -1,0 +1,9 @@
+services:
+  etl:
+    build: .
+    # Naming the image lets compose reuse an existing build instead of
+    # contacting the registry on every run.
+    image: dwc-etl
+    # The output directory is mounted so the CSV is written to the host.
+    volumes:
+      - ./output:/app/output
