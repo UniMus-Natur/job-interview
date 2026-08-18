@@ -112,7 +112,12 @@ dwc-etl --verbose
 python3 -m unittest discover -s tests
 ```
 
-23 tests pass from the fresh clone and the output matches the committed file.
+23 tests pass from the fresh clone, and the CSV it produces is byte-identical to
+the one produced by both Docker paths.
+
+The output file is **not committed** — the repository's `.gitignore` excludes
+`output/*` by design, so the dataset is reproduced by running the pipeline
+rather than shipped in the branch.
 
 There are **no third-party dependencies** — the standard library only — so there
 is nothing to resolve at install time and no version to conflict.

@@ -14,7 +14,7 @@ Every requirement stated in `README.md`, `TASK_ISSUE_TEMPLATE.md` and
 | 1.3 | Standardise all dates to ISO 8601 | Issue, mapping §1 | `dates.parse_event_date()` | `TestDateParsing` (7 cases); `TestEndToEnd.test_every_event_date_is_iso_8601` asserts the pattern across all rows |
 | 1.4 | Map `record_type` to the `basisOfRecord` controlled vocabulary | Issue, mapping §1 | `transform.BASIS_OF_RECORD`; unmapped input raises `UnmappedRecordType` | `TestBasisOfRecord` covers all five source types and the unmapped case |
 | 1.5 | Split `scientificName` from `scientificNameAuthorship` | Issue, mapping §1 | `names.split_authorship()` | `TestAuthorshipSplitting` (6 cases) |
-| 1.6 | Export to `output/dwc_occurrences.csv` | Issue | `pipeline.load()`; default path in `__main__.py` | File committed; `make verify` |
+| 1.6 | Export to `output/dwc_occurrences.csv` | Issue | `pipeline.load()`; default path in `__main__.py` | Generated at run time; deliberately excluded by the repository's `.gitignore` (`output/*`), so it is reproduced rather than shipped. `make verify` |
 
 ## 2. Reproducibility and execution
 
